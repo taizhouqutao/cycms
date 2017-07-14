@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <node id="guid1" name="图文滚动" type="simgandtxtlinkandbimg" bimgwidth="610" bimghigh="375" simgwidth="98" simghigh="71">
+    <link id="1" href="product1" src="UserFiles/image/2013/7/18/58020130718025544_BIG_TIG焊接.jpg" smallsrc="UserFiles/image/2013/7/18/58020130718025544_SMA_TIG焊接.jpg" alt="氩弧焊焊缝自动跟踪" content="氩弧(TIG)焊接自动跟踪系统应用于各种氩弧(TIG)焊管作业。特点是弧光稳定，焊缝成像明显，系统能够非常精确的找到熔池和焊缝的位置。自动控制滑台移动焊枪进行跟踪焊接。此外系统外扩设备能够测量焊接速度、温度、电流等功能。">
+    </link>
+    <link id="2" href="product1" src="UserFiles/image/2013/7/18/22220130718025946_BIG_激光焊接.jpg" smallsrc="UserFiles/image/2013/7/18/22220130718025946_SMA_激光焊接.jpg" alt="激光焊焊缝自动跟踪" content="激光焊接自动跟踪系统目前应用于激光焊管领域。激光焊管的进管速度快，弧光不稳定，导致焊缝跟踪困难。本系统通过自适应算法，表现出极佳的适应性。能够在焊缝两侧各种复杂的情况下始终找准焊缝中心。">
+    </link>
+    <link id="3" href="product1" src="UserFiles/image/2013/7/18/48620130718030207_BIG_IMG_0157(1).JPG" smallsrc="UserFiles/image/2013/7/18/48620130718030207_SMA_IMG_0157(1).JPG" alt="等离子焊缝自动跟踪" content="等离子焊接自动跟踪系统适用于等离子焊管。一般的较厚管壁的环焊，直缝焊等领域有较多应用。针对各种类型的焊缝，本系统能识别出缝的位置并进行等离子焊接的自动跟踪。">
+    </link>
+    <link id="4" href="product1" src="UserFiles/image/2013/7/18/69720130718030534_BIG_自动焊接（总介绍）.jpg" smallsrc="UserFiles/image/2013/7/18/69720130718030534_SMA_自动焊接（总介绍）.jpg" alt="视觉焊缝跟踪器" content="嵌入式自动焊接跟踪系统是应用于工业焊管、焊板等焊接领域。系统通过相机检测焊枪与焊缝之间的实时偏差。通过计算处理，自动调节电机滑台，保证焊枪在焊接时始终处于焊缝中心。系统当前适用于氩弧焊、等离子焊、二氧化碳气保焊、激光焊等领域。">
+    </link>
+    <link id="5" href="product1" src="UserFiles/image/2013/6/21/86620130621074525_BIG_2_1101201614005113.jpg" smallsrc="UserFiles/image/2013/6/21/86620130621074525_SMA_2_1101201614005113.jpg" alt="视觉焊接跟踪器" content="本系统主要功能是对有缝不锈钢管的氩弧焊接进行自动跟踪与矫正，解决目前人力成本日益提高，人工操作时的视觉疲劳带来的焊接质量问题。系统采用先进的智能视觉技术，融合光机电技术为一体，目前国内尚未发现同类产品。本系统由视觉采集系统捕捉焊缝与钨棒的焊接视频，再运用视觉技术计算钨棒的偏移量，进而控制机电装置实时矫正钨棒位置，达到钢管焊接自动跟踪的目的，从而实现无人值守高质量焊接的要求。">
+    </link>
+    <link id="6" href="product2" src="UserFiles/image/2013/7/18/69120130718031401_BIG__MG_3966.JPG" smallsrc="UserFiles/image/2013/7/18/69120130718031401_SMA__MG_3966.JPG" alt="视觉模具保护器" content="嵌入式视觉模具保护器用于监控注塑机生产时的产品、托模、顶针和镶件的工作情况。系统与注塑机和机械手之间进行通信，有效进行产品分类，防止压模。一体式图像处理系统，体积小、工作稳定可靠、安装维护方便和运行效率高。">
+    </link>
+  </node>
+  <node id="guid2" name="合作单位" type="imgandtxtlink" bimgwidth="51" bimghigh="18">
+    <link id="7" href="http://www.lanrentuku.com" src="UserFiles/Image/hgjx.jpg" alt="汉高机械">
+    </link>
+    <link id="8" href="http://www.lanrentuku.com" src="UserFiles/Image/zhlh.jpg" alt="镇海炼化">
+    </link>
+    <link id="9" href="http://www.lanrentuku.com" src="UserFiles/Image/hatiam.jpg" alt="HAITIAN">
+    </link>
+    <link id="10" href="http://www.lanrentuku.com" src="UserFiles/Image/ljjt.jpg" alt="久立集团">
+    </link>
+    <link id="11" href="http://www.lanrentuku.com" src="UserFiles/Image/hgjx.jpg" alt="汉高机械">
+    </link>
+  </node>
+</Root>

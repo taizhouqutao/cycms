@@ -1,0 +1,207 @@
+﻿#middle
+{
+    width:100%;
+    height:auto;
+}
+#middle .linkarea
+{
+    width:100%;
+    height:23px;
+}
+#middle .linkarea .tablinks
+{
+    position:relative;
+    left:25px;
+    float: left;
+}
+#middle .leftimg
+{
+    float:left;
+    width:249px;
+    height:auto;
+    background-color:White;
+}
+#middle .leftimg .leftimgtitle
+{
+    height:39px;
+    width:224px;
+    line-height:39px;
+    color:#0C83DF;
+    padding-left:25px;
+}
+#middle .leftimg .leftlinktitle
+{
+    height:30px;
+    width:224px;
+    line-height:30px;
+    color:#0C83DF;
+    padding-left:25px;
+}
+#middle .leftimg .lefthtml
+{
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#middle .lefthtml .sonlistback {
+height: 24px;
+width: 200px;
+line-height: 24px;
+border-bottom: 1px solid #C2C2C2;
+text-indent: 5px;
+font-size:14px;
+}
+#middle .leftimg .leftimgtitle span
+{
+    color:#C6C6C4;
+    position:relative;
+    left:3px;
+}
+#middle .leftimg .imglist
+{
+    width:100%;
+    height:auto;
+}
+#middle .leftimg .imglist ul 
+{
+    width:200px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+#middle .leftimg .imglist ul li
+{
+    margin-bottom:10px;
+}
+#middle .leftimg .imglist ul li a
+{
+    width:200px;
+    height:146px;
+    display:block;
+    overflow:hidden;
+}
+#middle .leftimg .imglist ul li a img
+{
+    border:2px solid #C2C2C2;
+}
+#middle .leftimg .leftimgbottom
+{
+    overflow:hidden;
+    height:13px;
+    width:100%;
+}
+#middle .rightcontent
+{
+    width:676px;
+    float:right;
+    height: auto!important;
+    height: 661px;
+    min-height:660px;
+    border:1px solid #C2C2C2;
+    background-color:White;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+#middle .rightcontent .nopostion
+{
+    height:35px;
+    line-height:35px;
+    color:#3C739C;
+    font-size:13px;
+    font-weight:600;
+}
+#middle .rightcontent .companyinfo
+{
+    height:auto;
+    font-size: 14px;
+    font-weight: 500;
+    text-indent: 60px;
+    line-height:25px;
+}
+#middle .leftlink
+{
+    width:247px;
+    border:1px solid #C2C2C2;
+    height: 62px;
+    float:left;
+    margin-top:18px;
+    background:url("../images/leftlink.jpg") repeat-x scroll center top transparent;
+}
+#middle .leftlink .imgandname
+{
+    width:144px;
+    height:130px;
+    overflow:hidden;
+    position:relative;
+    top:12px;
+    float:left;
+}
+#middle .leftlink .imgandname li
+{
+    line-height:18px;
+    margin-bottom:8px;
+    float:left;
+}
+#middle .leftlink .imgandname li a
+{
+    display:block;
+    float:left;
+    overflow:hidden;
+    padding-left:5px;
+}
+#middle .leftlink .imgandname li .linkname
+{
+    width:78px;
+    height:18px;
+}
+#middle .leftlink .phoneandliuyan
+{
+    width:206px;
+    overflow:hidden;
+    position:relative;
+    top:12px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#middle .leftlink .phoneandliuyan li
+{
+    line-height:20px;
+    margin-bottom:8px;
+    height:20px;
+    float:left;
+    margin-right:27px;
+}
+#middle .leftlink .phoneandliuyan li a
+{
+    display:block;
+    float:left;
+    padding-left:2px;
+    color:#0685E6;
+}
+#middle .leftlink .phoneandliuyan .linkimage_phone
+{
+    width:20px;
+    height:20px;
+    display:block;
+    background:url("../images/phone.jpg") repeat-x scroll center top transparent;
+}
+#middle .leftlink .phoneandliuyan .linkimage_liuyan
+{
+    width:20px;
+    height:20px;
+    display:block;
+    background:url("../images/liuyan.jpg") repeat-x scroll center top transparent;  
+}
+.liuyangname {
+    text-indent: 60px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+#btnSubmit {
+width: 100px;
+height: 40px;
+margin-left: 100px;
+margin-top: 10px;
+}

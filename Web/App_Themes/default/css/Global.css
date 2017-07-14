@@ -1,0 +1,158 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: "Lucida Grande" ,Arial,Lucida,Verdana,Helvetica, "微软雅黑" ,"宋体" ,sans-serif;
+    height: 100%;
+    font-size: 12px;
+    margin: 0 auto;
+    background:url("../images/background.jpg") repeat-x scroll center top transparent;
+    background-color:#F0F9F8;
+}
+ul{ list-style-type:none;}
+img{border: 0 none;}
+li{list-style: none outside none;word-spacing: normal;}
+a { text-decoration: none; text-align:left; }
+/*input{ border: 1px solid #C8D2D9; background-color:#FFFFFF; margin:0px; height:18px; width:150px; }*/
+a:link,a:visited { color: #000000; text-decoration: none; letter-spacing:1px;}
+a:hover { color:#1576BD; text-decoration:none;}
+.clear{ clear:both;}
+.hidden{ display:none;}
+#container{
+	text-align:left; width:980px; margin: 0 auto;
+	overflow:hidden;
+	height:auto;
+}
+#header
+{
+    height:210px;
+    width:100%;
+}
+#header .ullink ul
+{
+    width:100%;
+    height:45px;
+}
+#header .ullink ul li
+{
+    float:left;
+    width:164px;
+    height:45px;
+}
+#header .ullink ul li a
+{
+    border-bottom:1px solid #7A7B7D;
+    border-top:1px solid #7A7B7D;
+    height:43px;
+    display:block;
+    text-align:center;
+    line-height:43px;
+    border-right:1px solid #C6C6C4;
+    background:url("../images/titleback.jpg") repeat-x scroll center top transparent;
+    color:White;
+    font-size:12px;
+    font-weight:600;
+}
+#header .ullink ul li a:hover
+{
+    background:url("../images/titlebackhover.jpg") repeat-x scroll center top transparent;
+    border-bottom:1px solid #43A2E4;
+    border-top:1px solid #43A2E4;
+}
+#header .ullink ul .first
+{
+    width:159px;  
+}
+#header .ullink ul .first a
+{
+    border-left:1px solid #C6C6C4;
+}
+#header .topimage
+{
+    height:144px;
+    width:100%;
+}
+#header .topimage .logo
+{
+    width:387px;
+    height:80px;
+    overflow:hidden;
+    float:left;
+    background:url("../images/logo.png") no-repeat scroll center top transparent;
+    margin-top:39px;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/App_Themes/default/images/logo.png', sizingMethod='scale')
+}
+#header .topimage .searchpan
+{
+    float:right;
+    height:22px;
+    overflow:hidden;
+    width:331px;
+    margin-top:84px;
+}
+#header .topimage .searchpan .lanage
+{
+    height:21px;
+    line-height:21px;
+    width:155px;
+    float:left;
+    border-bottom:1px solid #D8D8D8;
+}
+#header .topimage .searchpan .lanage a
+{
+    margin-left:11px;
+}
+#keywords
+{
+    border: 1px solid #D8D8D8; 
+    background-color:#FFFFFF; 
+    height:20px; 
+    width:150px; 
+    float:left;
+    line-height:20px;
+    display:block;
+}
+#header .topimage .searchpan .form1
+{
+    display:block;
+    width:22px;
+    height:22px;
+    border: 0px solid #D8D8D8; 
+    background:url("../images/btn.jpg") no-repeat scroll 0 0;
+    float: left;
+} 
+#bottom
+{
+    height:97px;
+    width:100%;
+    margin-top:32px;
+}
+#bottom .topline
+{
+    height:1px;
+    display:block;
+    overflow:hidden;
+    width:100%;
+    background-color:#C6C6C4;
+}
+#bottom .middlecontent
+{
+    height:45px;
+    text-align:center;
+}
+#bottom .middlecontent .banquan
+{
+    position:relative;
+    top:19px;
+}
+#bottom .bottomline
+{
+    height:1px;
+    display:block;
+    overflow:hidden;
+    width:100%;
+    background-color:#C6C6C4;
+}

@@ -1,0 +1,80 @@
+﻿*{font-size:12px;}
+
+html { 
+	overflow-y:auto!important; 
+	*overflow-y:scroll; 
+} 
+
+body
+{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-color:#D4E4F6;
+
+}
+a:link,a:visited
+{ 
+	font-size:12px;
+	color:#000000;
+	text-decoration:none; 
+}	
+a:hover
+{
+	text-decoration:none;
+	color:#e9af25;
+}
+.divmain
+{
+	BORDER: #6c94fc 0px solid; 
+	FONT-SIZE: 12px; 
+	margin-right:auto;
+	margin-left:auto;
+	VERTICAL-ALIGN: top;
+	WIDTH: 99%;
+	text-align:center;
+}
+.top
+{
+	width:100%; 
+	height:50px;
+	border:solid 1px #6c94fc ;
+	padding:1px;
+	text-align:center; 
+	background-color:#ffffff;                                                                                                                                                                                                                         
+	margin-bottom:10px;
+}
+
+.top .row
+{
+	PADDING:0;
+	MARGIN:0;
+	PADDING-LEFT:5px;
+	FONT-SIZE:12px;
+	COLOR:#000000;
+	PADDING-TOP:5px;
+	BACKGROUND-COLOR:#f3F4EE;
+	height:20px;
+	text-align:left;
+}
+    
+.top .rowtitle
+{
+	background-color:#4477b8;	
+	text-align:center;
+	font-weight:bold;
+	color:#ffffff;
+}        
+
+.tableMain{text-align:left;border:solid 1px #6c94fc;width:99%; background-color:#ffffff;}
+.tableMain td{border-bottom:solid 1px #ffffff;height:30px;padding-left:4px;}
+.tableLeft{background-color:#ccffff; width: 120px;text-align:right;font-weight:bold;}
+.lastrow{background-color:#ccffff;border-top:solid 1px #6c94fc;text-align:center;}
+
+/*******GridView样式*****/
+
+.GridView {border:solid 1px #1ea294;margin-top:10px; height:auto; } 
+.GridView td{text-align:left; border:solid 1px #ffffff; height:20px;}
+.GridView th{background-image:url(../images/title.gif);}
+.GridViewHeader{height:25px; font-weight:bold;font-size:14px;color:#316ac5;}
+.articleNav a:link,#articleNav a:visited,#articleNav .currentPage{padding:1px 2px 1px 1px;border:1px solid #c7d6e1;margin:0 1px 0 0;text-align:center;text-decoration:none;font:normal 12px/14px verdana;}
+.articleNav a:hover{border:#ffffff 1px solid;background:#F3F8EF;text-decoration:none;color:#2e8c20}

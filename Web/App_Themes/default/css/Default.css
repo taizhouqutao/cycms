@@ -1,0 +1,254 @@
+﻿#middle 
+{
+    height:384px;
+    width:100%;
+}
+#middle .imgandrun
+{
+    float:left;
+    margin-left:12px;
+    width:100px;
+    height:350px;
+}
+#mycarousel a
+{
+    display:block;
+    border: 1px solid #4E8CB1;
+}
+#mycarousel .select
+{
+    border: 1px solid #D94600;
+}
+#mycarousel li
+{
+    margin-bottom: 19px;
+    width: 100px;
+    height: 73px;
+    float: left;
+    list-style: none;
+}
+#txtandrun
+{
+    width:186px;
+    height:359px;
+    float:left;
+    padding-left:35px;
+    overflow:hidden;
+}
+#txtandrun h1
+{
+    font-size:19px;
+    font-weight:600;
+    margin-top:24px;
+    height:auto;
+    display:block;
+}
+#txtandrun p
+{
+    line-height:20px;
+    font-weight:500;
+    margin-top:14px;
+    height:auto;
+    display:block;
+}
+#bigimg
+{
+    width:610px;
+    height:375px;
+    float:right;
+}
+#moreinfo
+{
+    height:287px;
+    width:100%;
+    margin-top:24px;
+}
+#moreinfo .compayinfo
+{
+    height:285px;
+    width:739px;
+    float:left;
+    border:1px solid #C6C6C4;
+    background-color:#F7FCF6;
+}
+#moreinfo .compayinfo .compaylist
+{
+    height:70px;
+    display:block;
+    width:100%;
+}
+#moreinfo .compayinfo .compaylist li
+{
+    height:69px;
+    width:147px;
+    display:block;
+    float:left;
+    border-right:1px solid #C6C6C4;
+    border-bottom:1px solid #C6C6C4;
+    background:url("../images/companyback.jpg") repeat-x scroll center top transparent;
+}
+#moreinfo .compayinfo .compaylist .lastli
+{
+    border-right:0px;
+}
+#moreinfo .compayinfo .compaylist li a
+{
+    color:#FFFFFF;
+    display:block;
+    width:80%;
+    height:45px;
+    text-align:center;
+    font-size:14px;
+    font-weight:600;
+    padding:12px 0 12px 0;
+    overflow:hidden;
+    cursor:pointer;
+    margin-left:auto;
+    margin-right:auto;
+
+;}
+#moreinfo .compayinfo .compaylist .select
+{
+    background-image:url(about:blank);
+    border-bottom:0px;
+}
+#moreinfo .compayinfo .compaylist .select a
+{
+    color:#1576BD;
+}
+#moreinfo .compayinfo .compaydetail
+{
+    height:215px;
+    width:100%;
+    overflow:hidden;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion
+{
+    height:215px;
+    width:100%;
+    overflow:hidden;
+    display:none;
+}
+#moreinfo .compayinfo .compaydetail .select
+{
+    display:block;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion .factleft
+{
+    float:left;
+    height:157px;
+    width:210px;
+    margin-top:52px;
+    margin-left:6px;
+   _margin-left:3px;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion .factleft h2
+{
+    font-size:14px;
+    font-weight:600;
+    display:block;
+    text-align:center;
+    height:34px;
+    overflow:hidden;
+    line-height:17px;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion .factleft img
+{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion .factmiddle
+{
+    width:235px;
+    float:left;
+    margin-left:22px;
+    margin-top:52px;
+    height:157px;
+    overflow:hidden;
+    line-height: 20px;
+    font-weight: 500;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion .factright
+{
+    width:207px;
+    height:157px;
+    overflow:hidden;
+    float:right;
+    margin-top:28px;
+    margin-right:34px;
+    _margin-right:17px;
+}
+#moreinfo .compayinfo .compaydetail .factoryunion .factright img
+{
+    border:1px solid #C6C6C4;
+}
+#moreinfo .newinfo
+{
+    width:220px;
+    height:285px;
+    float:right;
+    border:1px solid #C6C6C4;
+    background-color:#F7FCF6;
+}
+#moreinfo .newinfo .newtitle
+{
+    height:30px;
+    line-height:30px;
+    background:url("../images/friendlink.jpg") repeat-x scroll center top transparent;
+    text-indent:11px;
+    font-weight:600;
+}
+#moreinfo .newinfo .newlist
+{
+    height:207px;
+    width:100%;
+    display:block;
+}
+#moreinfo .newinfo .newlist .newcontent
+{
+    float:left;
+}
+.tancancontent{ width:100%; height:183px;}
+.tancancontent .slide-pic .pic-container {MARGIN: 0px 0px; OVERFLOW: hidden; WIDTH: 100%; HEIGHT: 183px;}
+.tancancontent .slide-pic UL {WIDTH: 100%}
+.tancancontent .slide-pic UL LI {WIDTH: 204px; padding:7px 8px; float:left;display:block;height:31px;border-bottom:1px solid #C6C6C4;}
+#moreinfo .newinfo .newbotton
+{
+    width:100%;
+    height:48px;
+}
+#moreinfo .newinfo .newbotton .contentus
+{
+    width:109px;
+    height:48px;
+    display:block;
+    background:url(../Images/content.jpg) no-repeat scroll 0 0 transparent;
+    border-right:1px solid #C6C6C4;
+    float:left;
+}
+#moreinfo .newinfo .newbotton .aboutus
+{
+    width:109px;
+    height:48px;
+    display:block;
+    float:right;
+    background:url(../Images/aboutus.jpg) no-repeat scroll 0 0 transparent;
+    border-left:1px solid #C6C6C4;
+}
+/*最近更新按钮部分*/
+#nextclick a /*往下*/
+{
+    display:block;
+    width:220px;
+    height:22px;
+    position:absolute;
+    margin-top:184px;
+    border-bottom:1px solid #C6C6C4;
+    border-top:1px solid #C6C6C4;
+    background:url(../Images/down.jpg) no-repeat scroll 0 0 transparent;
+}
+#nextclick .gray /*往下到尽头了*/
+{
+    background:url(../Images/down.jpg) no-repeat scroll 0 -22px transparent;
+}

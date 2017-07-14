@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cycms.Web</RootNamespace>
+    <AssemblyName>cycms.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET">
+      <HintPath>..\Lib\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CKFinder">
+      <HintPath>..\Lib\CKFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Maticsoft.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Maticsoft.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\admin\adminEdit.aspx" />
+    <Content Include="admin\admin\adminList.aspx" />
+    <Content Include="admin\admin\adminPassword.aspx" />
+    <Content Include="admin\aspxnews\articleAdd.aspx" />
+    <Content Include="admin\aspxnews\articleList.aspx" />
+    <Content Include="admin\aspxnews\IpHistory.aspx" />
+    <Content Include="admin\aspxnews\specialityAdd.aspx" />
+    <Content Include="admin\aspxnews\specialityList.aspx" />
+    <Content Include="admin\aspxnews\staticPage.aspx" />
+    <Content Include="admin\aspxnews\templateEdit.aspx" />
+    <Content Include="admin\aspxnews\typeAdd.aspx" />
+    <Content Include="admin\aspxnews\typeList.aspx" />
+    <Content Include="admin\css\common.css" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\FileManager\fileAdd.aspx" />
+    <Content Include="admin\FileManager\fileList.aspx" />
+    <Content Include="admin\FileManager\fileTypeAdd.aspx" />
+    <Content Include="admin\FileManager\fileTypeList.aspx" />
+    <Content Include="admin\FriendLink\FriendLinkEdit.aspx" />
+    <Content Include="admin\FriendLink\FriendLinkList.aspx" />
+    <Content Include="admin\guestbook\guestbooklist.aspx" />
+    <Content Include="admin\guestbook\guestbookReply.aspx" />
+    <Content Include="admin\guestbook\guestTypeAdd.aspx" />
+    <Content Include="admin\guestbook\guestTypeList.aspx" />
+    <Content Include="admin\guestbook\mailSetting.aspx" />
+    <Content Include="admin\images\btncancel.gif" />
+    <Content Include="admin\images\butClose.gif" />
+    <Content Include="admin\images\butOpen.gif" />
+    <Content Include="admin\images\dir.bmp" />
+    <Content Include="admin\images\Guide_bottom.gif" />
+    <Content Include="admin\images\guide_collapse.gif" />
+    <Content Include="admin\images\guide_expand.gif" />
+    <Content Include="admin\images\Guide_main.gif" />
+    <Content Include="admin\images\Guide_Title.gif" />
+    <Content Include="admin\images\Guide_top.gif" />
+    <Content Include="admin\images\itembg.gif" />
+    <Content Include="admin\images\loginbtnok.gif" />
+    <Content Include="admin\images\logintop.gif" />
+    <Content Include="admin\images\logo.gif" />
+    <Content Include="admin\images\th.gif" />
+    <Content Include="admin\images\title.gif" />
+    <Content Include="admin\images\tn.gif" />
+    <Content Include="admin\images\topbg.gif" />
+    <Content Include="admin\Login.aspx" />
+    <Content Include="admin\main.aspx" />
+    <Content Include="admin\num.aspx" />
+    <Content Include="admin\signalPage\signalPageEdit.aspx" />
+    <Content Include="admin\signalPage\signalPageList.aspx" />
+    <Content Include="admin\systemConfig.aspx" />
+    <Content Include="admin\teacherManager\ExcelUpload.aspx" />
+    <Content Include="admin\teacherManager\teacherEdit2.aspx" />
+    <Content Include="admin\teacherManager\teacherInfo.aspx" />
+    <Content Include="admin\teacherManager\teacher_list.aspx" />
+    <Content Include="admin\Themes\ThemesAdd.aspx" />
+    <Content Include="admin\Themes\ThemesList.aspx" />
+    <Content Include="admin\toolbar.aspx" />
+    <Content Include="admin\top.aspx" />
+    <Content Include="admin\xmlconfig\xmladd.aspx" />
+    <Content Include="admin\xmlconfig\xmllist.aspx" />
+    <Content Include="App_Data\cycms.mdb" />
+    <Content Include="App_Data\data.xml" />
+    <Content Include="App_Themes\default\css\Default.css" />
+    <Content Include="App_Themes\default\css\Global.css" />
+    <Content Include="App_Themes\default\css\guestBook.css" />
+    <Content Include="App_Themes\default\css\ShowArticle.css" />
+    <Content Include="App_Themes\default\css\Showlist.css" />
+    <Content Include="App_Themes\default\images\aboutus.jpg" />
+    <Content Include="App_Themes\default\images\background.jpg" />
+    <Content Include="App_Themes\default\images\btn.jpg" />
+    <Content Include="App_Themes\default\images\companyback.jpg" />
+    <Content Include="App_Themes\default\images\content.jpg" />
+    <Content Include="App_Themes\default\images\dot.jpg" />
+    <Content Include="App_Themes\default\images\down.jpg" />
+    <Content Include="App_Themes\default\images\friendlink.jpg" />
+    <Content Include="App_Themes\default\images\leftlink.jpg" />
+    <Content Include="App_Themes\default\images\liuyan.jpg" />
+    <Content Include="App_Themes\default\images\logo.png" />
+    <Content Include="App_Themes\default\images\phone.jpg" />
+    <Content Include="App_Themes\default\images\titleback.jpg" />
+    <Content Include="App_Themes\default\images\titlebackhover.jpg" />
+    <Content Include="control\Bottom.ascx" />
+    <Content Include="control\mobile_bottom.ascx" />
+    <Content Include="control\Top.ascx" />
+    <Content Include="favicon.ico" />
+    <Content Include="default.aspx" />
+    <Content Include="error.html" />
+    <Content Include="Global.asax" />
+    <Content Include="App_Themes\default\js\Default.js" />
+    <Content Include="guestBook.aspx" />
+    <Content Include="Images\bl.gif" />
+    <Content Include="Images\bl.png" />
+    <Content Include="Images\bm.gif" />
+    <Content Include="Images\bm.png" />
+    <Content Include="Images\br.gif" />
+    <Content Include="Images\br.png" />
+    <Content Include="Images\closebox.gif" />
+    <Content Include="Images\closebox.png" />
+    <Content Include="Images\lock.gif" />
+    <Content Include="Images\ml.gif" />
+    <Content Include="Images\ml.png" />
+    <Content Include="Images\mr.gif" />
+    <Content Include="Images\mr.png" />
+    <Content Include="Images\tl.gif" />
+    <Content Include="Images\tl.png" />
+    <Content Include="Images\tm.gif" />
+    <Content Include="Images\tm.png" />
+    <Content Include="Images\tr.gif" />
+    <Content Include="Images\tr.png" />
+    <Content Include="js\fancy-zoom-master\css\common.css" />
+    <Content Include="js\fancy-zoom-master\fireworks\closebox.png" />
+    <Content Include="js\fancy-zoom-master\fireworks\shadow.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\bl.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\bl.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\bm.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\bm.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\br.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\br.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\closebox.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\closebox.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\ml.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\ml.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\mr.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\mr.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\tl.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\tl.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\tm.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\tm.png" />
+    <Content Include="js\fancy-zoom-master\jquery\images\tr.gif" />
+    <Content Include="js\fancy-zoom-master\jquery\images\tr.png" />
+    <Content Include="js\fancy-zoom-master\jquery\index.html" />
+    <Content Include="js\fancy-zoom-master\jquery\js\fancyzoom.js" />
+    <Content Include="js\fancy-zoom-master\jquery\js\fancyzoom.min.js" />
+    <Content Include="js\fancy-zoom-master\mootools\images\bl.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\bl.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\bm.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\bm.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\br.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\br.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\closebox.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\closebox.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\loading.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\ml.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\ml.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\mr.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\mr.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\tl.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\tl.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\tm.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\tm.png" />
+    <Content Include="js\fancy-zoom-master\mootools\images\tr.gif" />
+    <Content Include="js\fancy-zoom-master\mootools\images\tr.png" />
+    <Content Include="js\fancy-zoom-master\mootools\index.html" />
+    <Content Include="js\fancy-zoom-master\mootools\js\fancyzoom.js" />
+    <Content Include="js\fancy-zoom-master\mootools\js\fancyzoom.min.js" />
+    <Content Include="js\fancy-zoom-master\prototype\images\bl.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\bl.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\bm.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\bm.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\br.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\br.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\closebox.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\closebox.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\ml.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\ml.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\mr.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\mr.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\tl.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\tl.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\tm.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\tm.png" />
+    <Content Include="js\fancy-zoom-master\prototype\images\tr.gif" />
+    <Content Include="js\fancy-zoom-master\prototype\images\tr.png" />
+    <Content Include="js\fancy-zoom-master\prototype\index.html" />
+    <Content Include="js\fancy-zoom-master\prototype\js\fancyzoom.js" />
+    <Content Include="js\fancy-zoom-master\prototype\js\fancyzoom.min.js" />
+    <Content Include="js\fancy-zoom-master\TODO.txt" />
+    <Content Include="js\Global.js" />
+    <Content Include="js\jcarousel\images\arrow-down.gif" />
+    <Content Include="js\jcarousel\images\arrow-up.gif" />
+    <Content Include="js\jcarousel\images\loading-small.gif" />
+    <Content Include="js\jcarousel\images\loading-thickbox.gif" />
+    <Content Include="js\jcarousel\images\loading.gif" />
+    <Content Include="js\jcarousel\lib\jquery-1.2.3.pack.js" />
+    <Content Include="js\jcarousel\lib\jquery.jcarousel.css" />
+    <Content Include="js\jcarousel\lib\jquery.jcarousel.js" />
+    <Content Include="js\jcarousel\lib\jquery.jcarousel.pack.js" />
+    <Content Include="js\jcarousel\lib\thickbox\thickbox.css" />
+    <Content Include="js\jcarousel\lib\thickbox\thickbox.js" />
+    <Content Include="js\jcarousel\skins\ie7\credits.txt" />
+    <Content Include="js\jcarousel\skins\ie7\loading-small.gif" />
+    <Content Include="js\jcarousel\skins\ie7\loading.gif" />
+    <Content Include="js\jcarousel\skins\ie7\loading_small.gif" />
+    <Content Include="js\jcarousel\skins\ie7\next-horizontal.gif" />
+    <Content Include="js\jcarousel\skins\ie7\prev-horizontal.gif" />
+    <Content Include="js\jcarousel\skins\ie7\skin.css" />
+    <Content Include="js\jcarousel\skins\tango\credits.txt" />
+    <Content Include="js\jcarousel\skins\tango\next-horizontal.gif" />
+    <Content Include="js\jcarousel\skins\tango\next-horizontal.png" />
+    <Content Include="js\jcarousel\skins\tango\next-vertical.png" />
+    <Content Include="js\jcarousel\skins\tango\prev-horizontal.gif" />
+    <Content Include="js\jcarousel\skins\tango\prev-horizontal.png" />
+    <Content Include="js\jcarousel\skins\tango\prev-vertical.png" />
+    <Content Include="js\jcarousel\skins\tango\skin.css" />
+    <Content Include="js\jcarousel\style.css" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery.KinSlideshow-1.2.1.min.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\images\ajax-loader.gif" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\images\icons-18-black.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\images\icons-18-white.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\images\icons-36-black.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\images\icons-36-white.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\jquery.mobile-1.3.2.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\jquery.mobile-1.3.2.min.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\jquery.mobile.structure-1.3.2.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\jquery.mobile.structure-1.3.2.min.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\jquery.mobile.theme-1.3.2.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\css\themes\default\jquery.mobile.theme-1.3.2.min.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\backbone-require.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\collections\CategoriesCollection.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\libs\backbone.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\libs\jquery.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\libs\jquerymobile.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\libs\lodash.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\libs\require.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\mobile.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\models\CategoryModel.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\routers\mobileRouter.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\backbone-require\js\views\CategoryView.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\collapsibles\dynamic-collapsible.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\controlgroups\dynamic-controlgroup.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\autodividers-linkbar-demo.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\autodividers-linkbar.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\autodividers-linkbar.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\autodividers-linkbar.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\autodividers-selector.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\grid-listview-demo.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\grid-listview.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\listviews\grid-listview.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\panels\panel-styling.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\panels\panel-swipe-open.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\popups\arrow.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\popups\dynamic-popup.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\popups\jquery.mobile.popup.arrow.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\popups\popup.arrow.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\slider\slider.tooltip.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\slider\slider.tooltip.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\slider\tooltip.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\buenosaires.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\capetown.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\newyork.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\paris.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\seoul.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\swipe-list.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\swipe-page.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\swipe-page.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\swipe-page.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\swipe\sydney.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\columntoggle-refresh.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\financial-grouped-columns.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\financial-grouped-reflow.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\movie-list-toggle-options.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\movie-list.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\phone-compare.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\examples\tables\reflow-refresh.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\controls-in-header-footer.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\disabling-a-button-does-not-work.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\dom-ready-not-working.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-can-i-stop-auto-enhancement-of-a-block-of-elements.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-can-i-stop-auto-enhancement-of-elements.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-configure-phonegap-cordova.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-do-i-control-page-titles.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-do-i-load-a-page.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-do-i-scroll-to-a-position.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-do-i-use-touch-mouse-events.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\how-does-theming-work.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\injected-content-is-not-enhanced.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\my-html-5-inputs-look-different-in-browsers.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\my-range-search-input-type-is-being-changed.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\pass-query-params-to-page.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\pass-via-the-hash-to-page.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\question-template.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\scripts-and-styles-not-loading.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\sometimes-custom-select-shows-as-dialog-popup.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\the-application-cache-is-not-working.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\triggering-create-on-injected-content-does-not-work.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\updating-the-value-of-enhanced-form-elements-does-not-work.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\faq\why-is-only-the-first-page-loaded.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\favicon.ico" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\global-nav.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\intro\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\intro\rwd.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\js\jquery.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\js\jquery.mobile-1.3.2.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\js\jquery.mobile-1.3.2.min.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\nav-examples.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\nav-faq.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\nav-widgets.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\search-results.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\search.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\accordions\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\autocomplete\autocomplete-remote.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\autocomplete\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\buttons\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\checkbox\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\collapsibles\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\controlgroups\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-alt.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-buttons.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-corners.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-noclosebtn.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-overlay.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-rightclosebtn.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-success.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog-with-select.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\dialog.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\dialog\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\bars-fixed-forms.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\bars-fullscreen.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\footer-persist-a.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\footer-persist-b.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\footer-persist-c.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\footer-persist-d.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\fixed-toolbars\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\footers\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\forms\form-disabled.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\forms\form-fieldcontain.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\forms\form-gallery.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\forms\form-hide-label.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\forms\form-label-hidden.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\forms\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\grids\grid-buttons.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\grids\grid-custom.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\grids\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\headers\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\icons\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\links\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\listviews\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\loader\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\navbar\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\navigation\demo.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\navigation\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\pages\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\pages\multipage-template.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\pages\page-template.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\panels\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\panels\panel-fixed.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\popup\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\popup\map.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\popup\popup-examples.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\popup\popup-examples.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\popup\popup-iframes.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\popup\popup-images.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\radiobuttons\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\selects\custom-selects.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\selects\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\sliders\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\sliders\rangeslider.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\sliders\switch.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\table-column-toggle\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\table-reflow\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\textinputs\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\transitions\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\transitions\page-transitions-dialog.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\widgets\transitions\page-transitions-page.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\css\jqm-demos.css" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\css\jqm_demo-icons-hd.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\css\jqm_demo-icons-sd.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-af.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-ag.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-bb.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-bk.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-hc.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-k.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-mg.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-ok.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-p.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-rh.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-ws.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\album-xx.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\apple.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\bg-pattern.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\bike.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\blackberry_10.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\bmw-thumb.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\bmw.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\buenosaires.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\capetown.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\de.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\fi.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\firefox-logo.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\firefox_os.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\galaxy_express.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\gb.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\gf.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\09-chat2.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\100-coffee.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\18-envelope.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\19-gear.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\21-skull.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\30-key.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\34-coffee.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\88-beermug.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\glyphish-icons\Read me first - license.txt" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\jquery-logo.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\landrover-thumb.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\landrover.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\lumia_800.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\newyork.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\nexus_7.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\paris.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\phone_galaxy3.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\phone_iphone5.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\phone_lumia920.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\phone_onex.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\photo-landscape.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\photo-portrait.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\photo-run.jpeg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\seoul.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\sydney.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\tesla-thumb.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\tesla.jpg" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\tizen.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\img\us.png" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\js\globalnav.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\js\h2widget.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\js\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\js\index.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\js\jqm-demos.js" />
+    <Content Include="js\jquery.mobile-1.3.2\demos\_assets\js\view-source.js" />
+    <Content Include="js\jquery.mobile-1.3.2\images\ajax-loader.gif" />
+    <Content Include="js\jquery.mobile-1.3.2\images\icons-18-black.png" />
+    <Content Include="js\jquery.mobile-1.3.2\images\icons-18-white.png" />
+    <Content Include="js\jquery.mobile-1.3.2\images\icons-36-black.png" />
+    <Content Include="js\jquery.mobile-1.3.2\images\icons-36-white.png" />
+    <Content Include="js\jquery.mobile-1.3.2\index.html" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile-1.3.2.css" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile-1.3.2.js" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile-1.3.2.min.css" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile-1.3.2.min.js" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile.structure-1.3.2.css" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile.structure-1.3.2.min.css" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile.theme-1.3.2.css" />
+    <Content Include="js\jquery.mobile-1.3.2\jquery.mobile.theme-1.3.2.min.css" />
+    <Content Include="js\My97DatePicker\calendar.js" />
+    <Content Include="js\My97DatePicker\lang\en.js" />
+    <Content Include="js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="js\My97DatePicker\WdatePicker.js" />
+    <Content Include="js\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="js\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="js\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="js\My97DatePicker\开发包\readme.txt" />
+    <Content Include="js\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="js\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="js\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="js\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="js\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="js\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="js\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="App_Themes\default\js\ShowArticle.js" />
+    <Content Include="loginCenter.aspx" />
+    <Content Include="mobile\Default.aspx" />
+    <Content Include="scripts.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="ShowArticle.aspx" />
+    <Content Include="Showlist.aspx" />
+    <Content Include="teacherControl\addressList.aspx" />
+    <Content Include="teacherControl\default.aspx" />
+    <Content Include="teacherControl\information.aspx" />
+    <Content Include="teacherControl\login.aspx" />
+    <Content Include="teacherControl\main.aspx" />
+    <Content Include="teacherControl\password.aspx" />
+    <Content Include="teacherControl\resources.aspx" />
+    <Content Include="teacherControl\resourcesAdd.aspx" />
+    <Content Include="teacherControl\toolbar.aspx" />
+    <Content Include="teacherControl\top.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin\adminEdit.aspx.cs">
+      <DependentUpon>adminEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin\adminEdit.aspx.designer.cs">
+      <DependentUpon>adminEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin\adminList.aspx.cs">
+      <DependentUpon>adminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin\adminList.aspx.designer.cs">
+      <DependentUpon>adminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin\adminPassword.aspx.cs">
+      <DependentUpon>adminPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin\adminPassword.aspx.designer.cs">
+      <DependentUpon>adminPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\articleAdd.aspx.cs">
+      <DependentUpon>articleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\articleAdd.aspx.designer.cs">
+      <DependentUpon>articleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\articleList.aspx.cs">
+      <DependentUpon>articleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\articleList.aspx.designer.cs">
+      <DependentUpon>articleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\IpHistory.aspx.cs">
+      <DependentUpon>IpHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\IpHistory.aspx.designer.cs">
+      <DependentUpon>IpHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\specialityAdd.aspx.cs">
+      <DependentUpon>specialityAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\specialityAdd.aspx.designer.cs">
+      <DependentUpon>specialityAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\specialityList.aspx.cs">
+      <DependentUpon>specialityList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\specialityList.aspx.designer.cs">
+      <DependentUpon>specialityList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\staticPage.aspx.cs">
+      <DependentUpon>staticPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\staticPage.aspx.designer.cs">
+      <DependentUpon>staticPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\templateEdit.aspx.cs">
+      <DependentUpon>templateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\templateEdit.aspx.designer.cs">
+      <DependentUpon>templateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\typeAdd.aspx.cs">
+      <DependentUpon>typeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\typeAdd.aspx.designer.cs">
+      <DependentUpon>typeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspxnews\typeList.aspx.cs">
+      <DependentUpon>typeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspxnews\typeList.aspx.designer.cs">
+      <DependentUpon>typeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FileManager\fileAdd.aspx.cs">
+      <DependentUpon>fileAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FileManager\fileAdd.aspx.designer.cs">
+      <DependentUpon>fileAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FileManager\fileList.aspx.cs">
+      <DependentUpon>fileList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FileManager\fileList.aspx.designer.cs">
+      <DependentUpon>fileList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FileManager\fileTypeAdd.aspx.cs">
+      <DependentUpon>fileTypeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FileManager\fileTypeAdd.aspx.designer.cs">
+      <DependentUpon>fileTypeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FileManager\fileTypeList.aspx.cs">
+      <DependentUpon>fileTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FileManager\fileTypeList.aspx.designer.cs">
+      <DependentUpon>fileTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FriendLink\FriendLinkEdit.aspx.cs">
+      <DependentUpon>FriendLinkEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FriendLink\FriendLinkEdit.aspx.designer.cs">
+      <DependentUpon>FriendLinkEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FriendLink\FriendLinkList.aspx.cs">
+      <DependentUpon>FriendLinkList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FriendLink\FriendLinkList.aspx.designer.cs">
+      <DependentUpon>FriendLinkList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\guestbook\guestbooklist.aspx.cs">
+      <DependentUpon>guestbooklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\guestbook\guestbooklist.aspx.designer.cs">
+      <DependentUpon>guestbooklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\guestbook\guestbookReply.aspx.cs">
+      <DependentUpon>guestbookReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\guestbook\guestbookReply.aspx.designer.cs">
+      <DependentUpon>guestbookReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\guestbook\guestTypeAdd.aspx.cs">
+      <DependentUpon>guestTypeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\guestbook\guestTypeAdd.aspx.designer.cs">
+      <DependentUpon>guestTypeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\guestbook\guestTypeList.aspx.cs">
+      <DependentUpon>guestTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\guestbook\guestTypeList.aspx.designer.cs">
+      <DependentUpon>guestTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\guestbook\mailSetting.aspx.cs">
+      <DependentUpon>mailSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\guestbook\mailSetting.aspx.designer.cs">
+      <DependentUpon>mailSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\num.aspx.cs">
+      <DependentUpon>num.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\num.aspx.designer.cs">
+      <DependentUpon>num.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\signalPage\signalPageEdit.aspx.cs">
+      <DependentUpon>signalPageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\signalPage\signalPageEdit.aspx.designer.cs">
+      <DependentUpon>signalPageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\signalPage\signalPageList.aspx.cs">
+      <DependentUpon>signalPageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\signalPage\signalPageList.aspx.designer.cs">
+      <DependentUpon>signalPageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\systemConfig.aspx.cs">
+      <DependentUpon>systemConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\systemConfig.aspx.designer.cs">
+      <DependentUpon>systemConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\teacherManager\ExcelUpload.aspx.cs">
+      <DependentUpon>ExcelUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\teacherManager\ExcelUpload.aspx.designer.cs">
+      <DependentUpon>ExcelUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\teacherManager\teacherEdit2.aspx.cs">
+      <DependentUpon>teacherEdit2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\teacherManager\teacherEdit2.aspx.designer.cs">
+      <DependentUpon>teacherEdit2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\teacherManager\teacherInfo.aspx.cs">
+      <DependentUpon>teacherInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\teacherManager\teacherInfo.aspx.designer.cs">
+      <DependentUpon>teacherInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\teacherManager\teacher_list.aspx.cs">
+      <DependentUpon>teacher_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\teacherManager\teacher_list.aspx.designer.cs">
+      <DependentUpon>teacher_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Themes\ThemesAdd.aspx.cs">
+      <DependentUpon>ThemesAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Themes\ThemesAdd.aspx.designer.cs">
+      <DependentUpon>ThemesAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Themes\ThemesList.aspx.cs">
+      <DependentUpon>ThemesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Themes\ThemesList.aspx.designer.cs">
+      <DependentUpon>ThemesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\toolbar.aspx.cs">
+      <DependentUpon>toolbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\toolbar.aspx.designer.cs">
+      <DependentUpon>toolbar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\xmlconfig\xmladd.aspx.cs">
+      <DependentUpon>xmladd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\xmlconfig\xmladd.aspx.designer.cs">
+      <DependentUpon>xmladd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\xmlconfig\xmllist.aspx.cs">
+      <DependentUpon>xmllist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\xmlconfig\xmllist.aspx.designer.cs">
+      <DependentUpon>xmllist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="control\Bottom.ascx.cs">
+      <DependentUpon>Bottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control\Bottom.ascx.designer.cs">
+      <DependentUpon>Bottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control\mobile_bottom.ascx.cs">
+      <DependentUpon>mobile_bottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control\mobile_bottom.ascx.designer.cs">
+      <DependentUpon>mobile_bottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control\Top.ascx.cs">
+      <DependentUpon>Top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control\Top.ascx.designer.cs">
+      <DependentUpon>Top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\server.ashx.cs">
+      <DependentUpon>server.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scripts.aspx.cs">
+      <DependentUpon>scripts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scripts.aspx.designer.cs">
+      <DependentUpon>scripts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\addressList.aspx.cs">
+      <DependentUpon>addressList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\addressList.aspx.designer.cs">
+      <DependentUpon>addressList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\information.aspx.cs">
+      <DependentUpon>information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\information.aspx.designer.cs">
+      <DependentUpon>information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\resources.aspx.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\resources.aspx.designer.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\resourcesAdd.aspx.cs">
+      <DependentUpon>resourcesAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\resourcesAdd.aspx.designer.cs">
+      <DependentUpon>resourcesAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\toolbar.aspx.cs">
+      <DependentUpon>toolbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\toolbar.aspx.designer.cs">
+      <DependentUpon>toolbar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherControl\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherControl\top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adapter\Adapte.csproj">
+      <Project>{436B8E9A-3B70-4B25-9B96-FEE762BC5F76}</Project>
+      <Name>Adapte</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="js\fancy-zoom-master\.gitignore" />
+    <None Include="js\fancy-zoom-master\README" />
+    <None Include="js\jquery.mobile-1.3.2\demos\global-nav.php" />
+    <None Include="js\jquery.mobile-1.3.2\demos\js\jquery.mobile-1.3.2.min.map" />
+    <None Include="js\jquery.mobile-1.3.2\demos\search.php" />
+    <None Include="js\jquery.mobile-1.3.2\jquery.mobile-1.3.2.min.map" />
+    <Content Include="mobile\server.ashx" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19035</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
