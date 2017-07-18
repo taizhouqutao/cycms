@@ -18,7 +18,6 @@
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>
@@ -125,7 +124,6 @@
     <Compile Include="GuestBookType.cs" />
     <Compile Include="HtmlPage.cs" />
     <Compile Include="IPHistry.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Speciality.cs" />
     <Compile Include="TeacherInfo.cs" />
     <Compile Include="TeacherStudyResume.cs" />
